@@ -22,6 +22,7 @@ elements = []
 
 # i is the index name. range is creating a list that has the numbers 0 - 6
 for i in range(0, 6):
+    # this range will actually list the numbers 0-5 (that's just the way it works)
     print(f'adding {i} to the list.')
     # i is the index name and the index is the numbers 0-6.
     # the for loop, loops through the index
