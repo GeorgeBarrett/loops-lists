@@ -1,7 +1,7 @@
 from sys import exit
 
 def gold_room():
-    print('This room is full of gold. How much should I take?')
+    print('This room is full of gold bars. How many do you take?')
 
     choice = input('> ')
 
@@ -27,15 +27,15 @@ def bear_room():
     while True:
         choice = input('> ')
 
-        if choice == 'Take honey':
+        if choice == 'take honey':
             dead('The bear eats you for brunch with eggs and kale.')
-        elif choice == 'Taunt bear' and not bear_moved:
+        elif choice == 'taunt bear' and not bear_moved:
             print('The bear has moved from the door.')
             print('You can go through it now.')
             bear_moved = True
-        elif choice == 'Taunt bear' and bear_moved:
+        elif choice == 'taunt bear' and bear_moved:
             dead('The taunt failed and now you are on a silver platter')
-        elif choice == 'Open door' and bear_moved:
+        elif choice == 'open door' and bear_moved:
             gold_room()
         else:
             print('I got no idea what that means')
@@ -50,7 +50,7 @@ def cthulhu_room():
 
     if 'flee' in choice:
         start()
-    elif 'nail' in choice:
+    elif 'applying' in choice:
         dead('Cthulhu hates the smell and kills you without question.')
     else: 
         cthulhu_room()
@@ -71,10 +71,12 @@ def start():
     elif choice == 'right':
         cthulhu_room()
     else: 
-        dead('You touch a wall and transpot to the ninth dimension')
+        dead('You touch a wall and transport to the ninth dimension')
 
 
 start()
+
+
 
 
 
