@@ -7,6 +7,7 @@ numbers = []
 # the returns from the loop will be incremental
 # 
 while i < 6:
+    # this loops will create an index of 0-5
     print(f'At the top i is {i}.')
     # this populates the empty list called numbers
     numbers.append(i)
@@ -16,7 +17,7 @@ while i < 6:
     i += 1
 
     # this prints the numbers variable that stores number 0-5
-    print('Numbers now: ', numbers)
+    print(f'Numbers now: ', numbers)
     # this f string prints the redifined i variable
     print(f'At the bottom i is {i}.')
 

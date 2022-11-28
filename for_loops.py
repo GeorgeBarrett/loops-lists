@@ -26,7 +26,7 @@ for i in range(0, 6):
     print(f'adding {i} to the list.')
     # i is the index name and the index is the numbers 0-6.
     # the for loop, loops through the index
-    # append adds 0-6 to the empty list stored within the elements variable  
+    # append adds range(0-6) to the empty list stored within the elements variable  
     elements.append(i)
 
 # the variable elements now has an index name and has been populated ^^
